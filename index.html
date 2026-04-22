@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو كرست بيتزا</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <div class="logo-area">
+            <span class="en-name">CRUST PIZZA</span>
+            <span class="divider">|</span>
+            <span class="ar-name">كرست بيتزا</span>
+        </div>
+        
+        <p>أصل القرمشة في البيتزا والفطاير</p>
+    </header>
+
+    <main class="menu-container">
+        <section class="menu-section">
+            <h2 class="section-title">البيتزا الإيطالية</h2>
+            <div class="menu-grid">
+                <div class="menu-card" onclick="addToCart('بيتزا رانش', 120)">
+                    <img src="images/بيتزا رانش.jpg" alt="بيتزا">
+                    <h3>بيتزا رانش</h3>
+                    <p>دجاج، صوص رانش، جبنة موتزاريل</p>
+                    <span class="price">120 ج.م</span>
+                </div>
+                <div class="menu-card" onclick="addToCart('بيتزا سوبر بريم', 140)">
+                    <img src="images/بيتزا سوبريم.jpg" alt="بيتزا">
+                    <h3>سوبر بريم</h3>
+                    <p>لحم بقر، فلفل، زيتون، بصل</p>
+                    <span class="price">140 ج.م</span>
+                </div>
+                <div class="menu-card" onclick="addToCart('بيتزا خضروات', 100)">
+                    <img src="images/بيتزا خضراوات.jpg" alt="بيتزا">
+                    <h3>بيتزا خضروات</h3>
+                    <p>فلفل، طماطم، زيتون، جبنة موتزاريل</p>
+                    <span class="price">100 ج.م</span>
+
+                </div>
+            
+                <div class="menu-card" onclick="addToCart('بيتزا بيبروني', 130)">
+                    <img src="images/بيبروني بيتزا.jpg" alt="بيتزا">
+                    <h3>بيتزا بيبروني</h3>
+                    <p>بيبروني, جبنة موتزاريل, صوص طماطم</p>
+                    <span class="price">130 ج.م</span>
+                </div>
+            
+            
+                <div class="menu-card" onclick="addToCart('بيتزا مارغريتا', 110)">
+,                    <img src="images/بيتزا مارجريتا1.jpg" alt="بيتزا">
+                    <h3>بيتزا مارغريتا</h3>
+                    <p>طماطم, ريحان, جبنة موتزاريل</p>
+                    <span class="price">110 ج.م</span>
+                </div>
+
+                <div class="menu-card" onclick="addToCart('بيتزا دجاج باربكيو', 150)">
+                    <img src="images/بيتزا دجاج.jpg" alt="بيتزا">
+                    <h3>دجاج باربكيو</h3>
+                    <p>دجاج, صوص باربكيو, جبنة موتزاريل</p>
+                    <span class="price">150 ج.م</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 class="section-title">الفطائر الشرقية</h2>
+            <div class="menu-grid">
+                <div class="menu-card" onclick="addToCart('فطيرة سجق شرقي', 90)">
+                    <img src="images/فطيرة سجق.jpg" alt="فطيرة">
+                    <h3>سجق شرقي</h3>
+                    <p>سجق بلدي, خضروات, ميكس جبن</p>
+                    <span class="price">90 ج.م</span>
+                </div>
+            
+            
+                    <div class="menu-card" onclick="addToCart('فطيرة سبانخ وجبنة', 80)">
+                        <img src="images/فطيرة سبانخ.jpg" alt="فطيرة">
+                        <h3>سبانخ وجبنة</h3>
+                        <p>سبانخ, جبنة فيتا, بصل, زيت زيتون</p>
+                        <span class="price">80 ج.م</span>
+                    </div>
+                
+                
+                    <div class="menu-card" onclick="addToCart('فطيرة لحم بعجين', 100)">
+                        <img src="images/لحم بعجين.jpg" alt="فطيرة">
+                        <h3>لحم بعجين</h3>
+                        <p>لحم مفروم， طماطم， بصل， بهارات</p>
+                        <span class="price">100 ج.م</span>
+                    </div>
+                </div>
+        </section>
+    
+        <section class="menu-section">
+            <h2 class="section-title">المقبلات</h2>
+            <div class="menu-grid">
+                <div class="menu-card" onclick="addToCart('بطاطس بالجبنة', 50)">
+                    <img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=200" alt="بطاطس">
+                    <h3>بطاطس بالجبنة</h3>
+                    <p>بطاطس مقلية، جبنة موتزاريل، صوص خاص</p>
+                    <span class="price">50 ج.م</span>
+                </div>
+                <div class="menu-card" onclick="addToCart('سلطة خضراء', 40)">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=200" alt="سلطة">
+                    <h3>سلطة خضراء</h3>
+                    <p>خس، خيار، طماطم، زيت زيتون</p>
+                    <span class="price">40 ج.م</span>
+                </div>
+                <div class="menu-card" onclick="addToCart('أجنحة دجاج', 80)">
+                    <img src="images/اجنحة دجاج.jpg" alt="أجنحة دجاج">
+                    <h3>أجنحة دجاج</h3>
+                    <p>أجنحة دجاج مقلية، صوص حار، صوص باربكيو</p>
+                    <span class="price">80 ج.م</span>
+
+                </div>
+                <div class="menu-card" onclick="addToCart('حمص بالطحينة', 30)">
+                    <img src="images/حمص بالطحينة.jpg" alt="حمص">
+                    <h3>حمص بالطحينة</h3>
+                    <p>حمص مهروس، طحينة، زيت زيتون، ليمون</p>
+                    <span class="price">30 ج.م</span>
+                </div> 
+                <div class="menu-card" onclick="addToCart('كبة مقلية', 60)">
+                    <img src="images/كبة مقلية.jpg" alt="كبة">
+                    <h3>كبة مقلية</h3>
+                    <p>كبة مقلية، لحم مفروم، صوص لبن</p>
+                    <span class="price">60 ج.م</span>
+                </div>
+                <div class="menu-card" onclick="addToCart('سمبوسة', 25)">
+                    <img src="images/سمبوسة.jpg" alt="سمبوسة">
+                    <h3>سمبوسة</h3>
+                    <p>سمبوسة مقلية محشوة باللحم المفروم والخضراوات</p>
+                    <span class="price">25 ج.م</span>
+                
+            </div>
+        </section>
+    </main>
+            <div id="whatsapp-btn" class="whatsapp-float" onclick="sendOrder()">
+    <span class="cart-count">0</span>
+    <img src="images/واتساب.png" alt="WhatsApp">
+</div>
+
+    
+
+    <script>
+    
+
+// 1. التعريفات الأساسية
+let cart = [];
+const phoneNumber = "201065639112"; // اكتب رقمك هنا
+
+// 2. دالة الإضافة للسلة
+function addToCart(name, price) {
+    cart.push({ name: name, price: price });
+    
+    // تحديث الرقم الظاهر على الزر
+    const countElement = document.querySelector('.cart-count');
+    if (countElement) {
+        countElement.innerText = cart.length;
+    }
+    
+    console.log("تمت إضافة:", name);
+}
+
+// 3. دالة إرسال الطلب للواتساب
+function sendOrder() {
+    if (cart.length === 0) {
+        alert("السلة فارغة، اختر بعض الفطائر أولاً!");
+        return;
+    }
+
+    let message = "طلبي هو:\n";
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        message += `${index + 1}- ${item.name} (${item.price} ج.م)\n`;
+        total += item.price;
+    });
+
+    message += `\nالإجمالي: ${total} ج.م`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+}
+
+
+
+        
+
+    </script>
+</body>
+</html>
